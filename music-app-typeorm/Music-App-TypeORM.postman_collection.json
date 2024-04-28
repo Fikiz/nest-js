@@ -1,0 +1,236 @@
+{
+	"info": {
+		"_postman_id": "a0a3a3e4-1fd9-4cb5-8a13-b64cc31d6bf3",
+		"name": "Music-App-TypeORM",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33969709"
+	},
+	"item": [
+		{
+			"name": "Get All Artist",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/artist/",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"artist",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create New Artist",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"New Artist\",\r\n    \"age\":22,\r\n    \"country\":\"Serbia\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/artist/",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"artist",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Artist",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Update PUT\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/artist/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"artist",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "b295f80b-555d-437f-9148-8bc66bbd1f8e"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Artist",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/artist/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"artist",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "02d3ed33-2561-4bfe-a12f-9ae6683eec96"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Song",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Bed of roses\",\r\n    \"duration\":222,\r\n    \"genre\":\"rock\",\r\n    \"release_date\":\"2017-07-07\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/songs/",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"songs",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Song by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/songs/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"songs",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "ec9acf1a-0662-4d3b-bd44-988153659303"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Song",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"RockNRoll\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/songs/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"songs",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "ec9acf1a-0662-4d3b-bd44-988153659303"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Song",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/songs/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"songs",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "ec9acf1a-0662-4d3b-bd44-988153659303"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
